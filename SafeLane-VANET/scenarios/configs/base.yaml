@@ -1,0 +1,35 @@
+paths:
+  out_root: "out"
+  sumo_bin: "sumo"
+  sumo_cfg: "scenarios/sumo/your.sumocfg"   # TODO: update
+  packets_csv: "out/ns3/packets.csv"
+  tx_csv: "out/ns3/tx.csv"
+  veh_to_node_csv: "out/ns3/veh_to_node.csv"
+
+sim:
+  exp_name: "SafeLaneVANET"
+  dt: 0.1
+  duration: 120.0
+
+algo:
+  lanemark:
+    w_leader: 1.0
+    w_follower: 0.7
+    gap_clip: 80.0
+
+  ekf:
+    horizon_s: 2.5
+    dt_pred: 0.1
+
+  comm:
+    window_s: 1.0
+
+  controller:
+    ttc_min: 2.0
+    th_min: 1.2
+    gap_min: 5.0
+    cooldown_s: 2.0
+    pdr_min: 0.85
+    lat_max: 0.15
+    strict_factor: 1.35
+    coord_window: 0.4

@@ -1,0 +1,5 @@
+numpy>=1.24
+pandas>=2.0
+pyyaml>=6.0
+tqdm>=4.66
+# traci is provided by SUMO; if needed you can pip install sumolib, traci via SUMO distribution
