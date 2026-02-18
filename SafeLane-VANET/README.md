@@ -281,11 +281,3 @@ This repo produces:
 
 ---
 
-## License
-Add your preferred license (MIT/Apache-2.0) before public release.
-
----
-
-## Contact / Maintainer
-Maintainer: (add your name + email)
-
